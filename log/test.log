@@ -1,0 +1,122 @@
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 14:59:01) [GET]
+Completed in 2ms (View: 0, DB: 29) | 200 OK [http://test.host/products]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 14:59:12) [GET]
+Completed in 2ms (View: 0, DB: 27) | 200 OK [http://test.host/products]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 15:19:45) [GET]
+Completed in 1ms (View: 0, DB: 27) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 15:20:17) [GET]
+Completed in 1ms (View: 0, DB: 66) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 15:20:47) [GET]
+Completed in 2ms (View: 0, DB: 22) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 15:21:01) [GET]
+Completed in 2ms (View: 0, DB: 24) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 15:22:47) [GET]
+Completed in 2ms (View: 0, DB: 26) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 15:23:28) [GET]
+Completed in 1ms (View: 0, DB: 25) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 15:24:53) [GET]
+Completed in 2ms (View: 0, DB: 48) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 15:32:57) [GET]
+Completed in 1ms (View: 0, DB: 22) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 15:40:00) [GET]
+Completed in 1ms (View: 0, DB: 23) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 15:43:31) [GET]
+Completed in 2ms (View: 0, DB: 24) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 15:46:02) [GET]
+Completed in 2ms (View: 0, DB: 21) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 15:47:02) [GET]
+Completed in 2ms (View: 0, DB: 23) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 15:48:36) [GET]
+Completed in 1ms (View: 0, DB: 24) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 15:54:31) [GET]
+Completed in 1ms (View: 0, DB: 24) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 15:58:48) [GET]
+Completed in 2ms (View: 0, DB: 42) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 16:01:30) [GET]
+Completed in 2ms (View: 0, DB: 24) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 16:01:56) [GET]
+Completed in 1ms (View: 0, DB: 25) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 16:08:15) [GET]
+Completed in 1ms (View: 0, DB: 53) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 17:17:16) [GET]
+Completed in 1ms (View: 0, DB: 24) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 17:18:41) [GET]
+Completed in 2ms (View: 0, DB: 24) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 17:20:27) [GET]
+Completed in 1ms (View: 0, DB: 22) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 17:47:37) [GET]
+Completed in 1ms (View: 0, DB: 25) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 18:13:29) [GET]
+Completed in 1ms (View: 0, DB: 22) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 18:13:45) [GET]
+Completed in 1ms (View: 0, DB: 36) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 18:19:58) [GET]
+Completed in 1ms (View: 0, DB: 22) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 19:20:22) [GET]
+Completed in 1ms (View: 0, DB: 37) | 200 OK [http://test.host/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "carts" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "carts" [0m
+  [4;36;1mCart Load (0.2ms)[0m   [0;1mSELECT * FROM "carts" WHERE ("carts"."id" = 2053932785) [0m
+  [4;35;1mCart Load (0.2ms)[0m   [0mSELECT * FROM "carts" WHERE ("carts"."id" = 2053932785) [0m
+  [4;36;1mCart Load (0.3ms)[0m   [0;1mSELECT * FROM "carts" WHERE ("carts"."id" = 2053932785) [0m
+  [4;35;1mCart Load (0.2ms)[0m   [0mSELECT * FROM "carts" WHERE ("carts"."id" = 2053932785) [0m
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 19:23:03) [GET]
+Completed in 1ms (View: 0, DB: 25) | 200 OK [http://test.host/]
