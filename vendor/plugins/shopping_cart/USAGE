@@ -1,0 +1,32 @@
+Description:
+    Shopping Cart plugin
+
+Example:
+    ./script/plugin install git@github.com:chip/shopping_cart.git ???
+    rake shopping_cart:setup
+    
+    This will create:
+        app/views/shopping_cart/
+        .
+        .
+        config/shopping_cart.yml # contains merchant account login credentials
+        
+    Setup your root route if none exists in routes.rb:
+      map.root :controller => 'products', :action => 'index'
+      map.resources :products
+      map.current_cart 'cart', :controller => 'carts', :action => 'show', :id => 'current'
+      map.resources :carts
+      map.resources :orders
+        
+    # application_controller.rb
+    class ApplicationController < ....
+      include ShoppingCart
+
+    # environment.rb
+    config.gem 'haml'      
+
+Prerequisites:
+    haml
+
+# Tested with Rails 2.3.3
+    

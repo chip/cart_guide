@@ -120,3 +120,688 @@ Completed in 1ms (View: 0, DB: 37) | 200 OK [http://test.host/]
 
 Processing ProductsController#index (for 0.0.0.0 at 2009-09-02 19:23:03) [GET]
 Completed in 1ms (View: 0, DB: 25) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 11:13:32) [GET]
+Completed in 1ms (View: 0, DB: 34) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 13:43:21) [GET]
+Completed in 2ms (View: 0, DB: 23) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 13:45:01) [GET]
+Completed in 1ms (View: 0, DB: 22) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 13:52:04) [GET]
+Completed in 2ms (View: 0, DB: 24) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 14:01:15) [GET]
+Completed in 1ms (View: 0, DB: 24) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 14:02:34) [GET]
+Completed in 2ms (View: 0, DB: 23) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 14:06:19) [GET]
+Completed in 2ms (View: 0, DB: 23) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 14:49:49) [GET]
+Completed in 2ms (View: 0, DB: 22) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 14:51:05) [GET]
+Completed in 2ms (View: 0, DB: 24) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 14:51:19) [GET]
+Completed in 1ms (View: 0, DB: 26) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 14:52:03) [GET]
+Completed in 2ms (View: 0, DB: 44) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 15:25:07) [GET]
+Completed in 1ms (View: 0, DB: 24) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 15:26:54) [GET]
+Completed in 1ms (View: 0, DB: 27) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 15:27:51) [GET]
+Completed in 1ms (View: 0, DB: 24) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 15:28:19) [GET]
+Completed in 1ms (View: 0, DB: 127) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 15:31:44) [GET]
+Completed in 2ms (View: 0, DB: 32) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 15:32:11) [GET]
+Completed in 2ms (View: 0, DB: 26) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 15:33:11) [GET]
+Completed in 2ms (View: 0, DB: 27) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 15:36:40) [GET]
+Completed in 1ms (View: 0, DB: 22) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 16:15:29) [GET]
+Completed in 2ms (View: 0, DB: 24) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 16:42:27) [GET]
+Completed in 2ms (View: 0, DB: 32) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 17:21:50) [GET]
+Completed in 2ms (View: 0, DB: 22) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 17:23:37) [GET]
+Completed in 2ms (View: 0, DB: 22) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 17:25:45) [GET]
+Completed in 2ms (View: 0, DB: 22) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 17:26:51) [GET]
+Completed in 2ms (View: 0, DB: 23) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-03 17:41:44) [GET]
+Completed in 2ms (View: 0, DB: 21) | 200 OK [http://test.host/]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-03 17:49:17) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-03 17:49:55) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-03 17:50:16) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-03 17:50:40) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-03 17:51:10) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-03 17:52:16) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-03 17:52:30) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-03 18:03:17) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-03 19:23:12) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-03 19:41:43) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-03 19:42:13) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-03 19:44:15) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-03 19:45:27) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-03 19:45:49) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-03 19:53:33) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-03 19:55:15) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-03 19:56:29) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-03 19:57:07) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-03 22:21:50) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 10:08:34) [GET]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-04 10:08:34) [GET]
+Completed in 2ms (View: 0, DB: 39) | 200 OK [http://test.host/]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 10:09:36) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 10:12:35) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 10:13:02) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 10:15:10) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 10:18:47) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 10:22:17) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 10:23:40) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 10:24:03) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 10:28:49) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 10:29:02) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 10:41:43) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 11:41:09) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 11:47:49) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 11:48:05) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 11:48:32) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 11:49:20) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 12:00:44) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 12:01:53) [GET]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 12:02:14) [GET]
+  [4;36;1mCart Create (0.4ms)[0m   [0;1mINSERT INTO "carts" ("updated_at", "purchased_at", "created_at") VALUES('2009-09-04 17:02:14', NULL, '2009-09-04 17:02:14')[0m
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 12:03:19) [GET]
+  [4;36;1mCart Create (0.4ms)[0m   [0;1mINSERT INTO "carts" ("updated_at", "purchased_at", "created_at") VALUES('2009-09-04 17:03:19', NULL, '2009-09-04 17:03:19')[0m
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 12:03:48) [GET]
+  [4;36;1mCart Create (0.4ms)[0m   [0;1mINSERT INTO "carts" ("updated_at", "purchased_at", "created_at") VALUES('2009-09-04 17:03:48', NULL, '2009-09-04 17:03:48')[0m
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 12:07:45) [GET]
+  [4;36;1mCart Create (0.4ms)[0m   [0;1mINSERT INTO "carts" ("updated_at", "purchased_at", "created_at") VALUES('2009-09-04 17:07:45', NULL, '2009-09-04 17:07:45')[0m
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 12:12:00) [GET]
+  [4;36;1mCart Create (0.4ms)[0m   [0;1mINSERT INTO "carts" ("updated_at", "purchased_at", "created_at") VALUES('2009-09-04 17:12:01', NULL, '2009-09-04 17:12:01')[0m
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 12:12:22) [GET]
+  [4;36;1mCart Create (0.4ms)[0m   [0;1mINSERT INTO "carts" ("updated_at", "purchased_at", "created_at") VALUES('2009-09-04 17:12:22', NULL, '2009-09-04 17:12:22')[0m
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 12:13:33) [GET]
+  [4;36;1mCart Create (0.4ms)[0m   [0;1mINSERT INTO "carts" ("updated_at", "purchased_at", "created_at") VALUES('2009-09-04 17:13:33', NULL, '2009-09-04 17:13:33')[0m
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 12:14:10) [GET]
+  [4;36;1mCart Create (0.5ms)[0m   [0;1mINSERT INTO "carts" ("updated_at", "purchased_at", "created_at") VALUES('2009-09-04 17:14:10', NULL, '2009-09-04 17:14:10')[0m
+Rendering template within layouts/carts
+Rendering carts/index
+Completed in 115ms (View: 12, DB: 0) | 200 OK [http://test.host/carts]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 12:15:32) [GET]
+  [4;36;1mCart Create (0.4ms)[0m   [0;1mINSERT INTO "carts" ("updated_at", "purchased_at", "created_at") VALUES('2009-09-04 17:15:33', NULL, '2009-09-04 17:15:33')[0m
+Rendering template within layouts/carts
+Rendering carts/index
+Completed in 106ms (View: 2, DB: 0) | 200 OK [http://test.host/carts]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 12:16:25) [GET]
+Rendering template within layouts/carts
+Rendering carts/index
+Completed in 13ms (View: 2, DB: 19) | 200 OK [http://test.host/carts]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-04 12:16:25) [GET]
+Completed in 2ms (View: 0, DB: 8) | 200 OK [http://test.host/]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 14:50:00) [GET]
+Rendering template within layouts/carts
+Rendering carts/index
+Completed in 15ms (View: 2, DB: 17) | 200 OK [http://test.host/carts]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-04 14:50:00) [GET]
+Completed in 2ms (View: 0, DB: 8) | 200 OK [http://test.host/]
+
+
+Processing CartsController#index (for 0.0.0.0 at 2009-09-04 14:51:38) [GET]
+Rendering template within layouts/carts
+Rendering carts/index
+Completed in 14ms (View: 3, DB: 19) | 200 OK [http://test.host/carts]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-04 14:51:38) [GET]
+Completed in 2ms (View: 0, DB: 9) | 200 OK [http://test.host/]
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-09-04 14:53:35) [GET]
+Completed in 2ms (View: 0, DB: 28) | 200 OK [http://test.host/]
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 15:05:30) [GET]
+  Parameters: {"id"=>"current"}
+Rendering template within layouts/carts
+Rendering carts/show
+Completed in 5ms (View: 3 | 200 OK [http://test.host/cart]
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 15:05:53) [GET]
+  Parameters: {"id"=>"current"}
+Rendering template within layouts/carts
+Rendering carts/show
+Completed in 3ms (View: 2 | 200 OK [http://test.host/cart]
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 15:07:36) [GET]
+  Parameters: {"id"=>"current"}
+Rendering template within layouts/carts
+Rendering carts/show
+Completed in 5ms (View: 3 | 200 OK [http://test.host/cart]
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 15:10:50) [GET]
+  Parameters: {"id"=>"current"}
+Rendering template within layouts/carts
+Rendering carts/show
+Completed in 3ms (View: 2 | 200 OK [http://test.host/cart]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 15:11:27) [GET]
+  Parameters: {"id"=>"current"}
+Rendering template within layouts/carts
+Rendering carts/show
+Completed in 3ms (View: 2 | 200 OK [http://test.host/cart]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 15:13:12) [GET]
+  Parameters: {"id"=>"current"}
+Rendering template within layouts/carts
+Rendering carts/show
+Completed in 4ms (View: 3 | 200 OK [http://test.host/cart]
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 15:16:00) [GET]
+  Parameters: {"id"=>"current"}
+Rendering template within layouts/carts
+Rendering carts/show
+Completed in 3ms (View: 2 | 200 OK [http://test.host/cart]
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 15:16:19) [GET]
+  Parameters: {"id"=>"current"}
+Rendering template within layouts/carts
+Rendering carts/show
+Completed in 3ms (View: 2 | 200 OK [http://test.host/cart]
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 15:31:29) [GET]
+  Parameters: {"id"=>"current"}
+Rendering template within layouts/carts
+Rendering carts/show
+Completed in 3ms (View: 2 | 200 OK [http://test.host/cart]
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 15:48:11) [GET]
+  Parameters: {"id"=>"current"}
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 15:49:04) [GET]
+  Parameters: {"id"=>"current"}
+  [4;36;1mCart Create (0.4ms)[0m   [0;1mINSERT INTO "carts" ("updated_at", "purchased_at", "created_at") VALUES('2009-09-04 20:49:05', NULL, '2009-09-04 20:49:05')[0m
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 15:50:47) [GET]
+  Parameters: {"id"=>"current"}
+  [4;36;1mCart Create (0.4ms)[0m   [0;1mINSERT INTO "carts" ("updated_at", "purchased_at", "created_at") VALUES('2009-09-04 20:50:47', NULL, '2009-09-04 20:50:47')[0m
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 15:51:29) [GET]
+  Parameters: {"id"=>"current"}
+  [4;36;1mCart Create (0.4ms)[0m   [0;1mINSERT INTO "carts" ("updated_at", "purchased_at", "created_at") VALUES('2009-09-04 20:51:29', NULL, '2009-09-04 20:51:29')[0m
+  [4;35;1mLineItem Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: line_items: SELECT * FROM "line_items" WHERE ("line_items".cart_id = 2053932797) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCarts (20090902163427)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("carts")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCarts (20090902163427)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("carts")[0m
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 15:53:37) [GET]
+  Parameters: {"id"=>"current"}
+  [4;36;1mCart Create (0.4ms)[0m   [0;1mINSERT INTO "carts" ("updated_at", "purchased_at", "created_at") VALUES('2009-09-04 20:53:37', NULL, '2009-09-04 20:53:37')[0m
+  [4;35;1mLineItem Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: line_items: SELECT * FROM "line_items" WHERE ("line_items".cart_id = 2053932798) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCarts (20090902163427)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("carts")[0m
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 15:54:13) [GET]
+  Parameters: {"id"=>"current"}
+  [4;36;1mCart Create (0.4ms)[0m   [0;1mINSERT INTO "carts" ("updated_at", "purchased_at", "created_at") VALUES('2009-09-04 20:54:13', NULL, '2009-09-04 20:54:13')[0m
+  [4;35;1mLineItem Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: line_items: SELECT * FROM "line_items" WHERE ("line_items".cart_id = 2053932799) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateCarts (20090902163427)
+  [4;35;1mSQL (0.0ms)[0m   [0mMysql::Error: Table 'carts' already exists: CREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `purchased_at` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateCarts (20090902163427)
+  [4;35;1mSQL (0.0ms)[0m   [0mMysql::Error: Table 'carts' already exists: CREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `purchased_at` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 16:01:56) [GET]
+  Parameters: {"id"=>"current"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCart Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCart Create (0.2ms)[0m   [0mINSERT INTO `carts` (`updated_at`, `purchased_at`, `created_at`) VALUES('2009-09-04 21:01:56', NULL, '2009-09-04 21:01:56')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mLineItem Load (0.2ms)[0m   [0mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 18:06:24) [GET]
+  Parameters: {"id"=>"current"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCart Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCart Create (0.2ms)[0m   [0mINSERT INTO `carts` (`updated_at`, `purchased_at`, `created_at`) VALUES('2009-09-04 23:06:24', NULL, '2009-09-04 23:06:24')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mLineItem Load (0.2ms)[0m   [0mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 2) [0m
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 18:07:24) [GET]
+  Parameters: {"id"=>"current"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCart Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCart Create (0.2ms)[0m   [0mINSERT INTO `carts` (`updated_at`, `purchased_at`, `created_at`) VALUES('2009-09-04 23:07:24', NULL, '2009-09-04 23:07:24')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mLineItem Load (0.6ms)[0m   [0mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 3) [0m
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 18:11:55) [GET]
+  Parameters: {"id"=>"current"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCart Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCart Create (0.2ms)[0m   [0mINSERT INTO `carts` (`updated_at`, `purchased_at`, `created_at`) VALUES('2009-09-04 23:11:55', NULL, '2009-09-04 23:11:55')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+ERROR: compiling _run_haml_app47views47shopping_cart47_cart46html46haml_locals_cart_object RAISED compile error
+/Users/deploy/Sites/cart_guide/app/views/shopping_cart/_cart.html.haml:1: syntax error, unexpected tSYMBEG, expecting kEND
+...te', :id => @current_cart.id :method => 'put' do;
+                              ^
+/Users/deploy/Sites/cart_guide/app/views/shopping_cart/_cart.html.haml:1: syntax error, unexpected kDO, expecting kEND
+...nt_cart.id :method => 'put' do;
+                              ^
+/Users/deploy/Sites/cart_guide/app/views/shopping_cart/_cart.html.haml:45: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_haml_app47views47shopping_cart47_cart46html46haml_locals_cart_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];cart = local_assigns[:cart];;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :format=>:xhtml, :ugly=>false, :preserve=>["textarea", "pre"]});_erbout = _hamlout.buffer;__in_erb_template = true;; form_tag url_for :controller => 'carts', :action => 'update', :id => @current_cart.id :method => 'put' do;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_hamlout.push_text("<fieldset>\n  <legend>\n    Your Shopping Cart\n  </legend>\n  <br />\n  <table id='line_items'>\n    <tr>\n      <th>\n        Product\n      </th>\n      <th>\n        Qty\n      </th>\n      <th class='price'>\n        Price\n      </th>\n      <th class='line_item_subtotal'>\n        Subtotal\n      </th>\n    </tr>\n", false, 2); if @line_items.count.zero?;
+
+_hamlout.push_text("    <tr>\n", false, 1);_hamlout.open_tag("td", false, true, false, false, {}, false, false, nil, "Shopping Cart is Empty", :colspan => 4);
+_hamlout.push_text("    </tr>\n", false, -1); else;
+_hamlout.push_text("    ");haml_temp =  render :partial => 'carts/line_item', :collection => @line_items;
+haml_temp = _hamlout.push_script(haml_temp, false, false, false, false, false);
+_hamlout.push_text("    <tr>\n", false, 1);_hamlout.open_tag("td", false, false, false, false, {"class"=>"total price"}, false, false, nil, nil, :colspan => 4, :align => 'right');
+
+
+_hamlout.push_text("        <br />\n        Amount total:\n        ");haml_temp =  number_to_currency @current_cart.total_price;
+haml_temp = _hamlout.push_script(haml_temp, false, false, false, false, false);_hamlout.push_text("      </td>\n    </tr>\n", false, -2); if ['edit', 'update'].include?(params[:action]) && !@line_items.count.zero?;
+
+_hamlout.push_text("    <tr>\n", false, 1);_hamlout.open_tag("td", false, false, false, false, {"class"=>"submit_button"}, false, false, nil, nil, :colspan => 4, :align => 'right');
+
+
+_hamlout.push_text("        <br />\n        <br />\n        ");haml_temp =  submit_tag('Update Quantities');
+haml_temp = _hamlout.push_script(haml_temp, false, false, false, false, false);
+_hamlout.push_text("        <br />\n      </td>\n    </tr>\n", false, -2);end;end;
+_hamlout.push_text("  </table>\n  <p>\n"); unless params[:action] == 'index' && params[:controller] == 'products';
+
+
+
+
+
+
+_hamlout.push_text("    <a class='link_cont_shopping' href='/products' title='Continue Shopping'>\n      <span>\n        Continue Shopping\n      </span>\n    </a>\n    <a class='link_proceed_checkout' href='/orders/new' title='checkout'>\n      <span>\n        Proceed to Checkout\n      </span>\n    </a>\n");end;_hamlout.push_text("  </p>\n</fieldset>\n", false, -2);end;
+@haml_buffer = @haml_buffer.upper;_erbout;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/deploy/Sites/cart_guide/app/views/shopping_cart/_cart.html.haml:45:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:28:in `render_without_template_tracking'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_view/test_case.rb:20:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable_partial.rb:20:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable_partial.rb:19:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_view/template.rb:199:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_view/partials.rb:184:in `render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:262:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-2.0.9/lib/haml/helpers/action_view_mods.rb:14:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:969:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/deploy/Sites/cart_guide/vendor/plugins/shopping_cart/lib/app/controllers/carts_controller.rb:7:in `show'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:606:in `sass_old_process'
+/Library/Ruby/Gems/1.8/gems/haml-2.0.9/rails/../lib/sass/plugin/rails.rb:19:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/test_process.rb:567:in `process_with_test'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/test_process.rb:447:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/test_process.rb:398:in `get'
+./test/carts_controller_test.rb:15:in `test_show'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.3/lib/active_support/testing/setup_and_teardown.rb:62:in `__send__'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.3/lib/active_support/testing/setup_and_teardown.rb:62:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnermediator.rb:46:in `run_suite'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:67:in `start_mediator'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:41:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnerutilities.rb:29:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:216:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:12:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit.rb:278
+/Library/Ruby/Gems/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 18:12:09) [GET]
+  Parameters: {"id"=>"current"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCart Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCart Create (0.2ms)[0m   [0mINSERT INTO `carts` (`updated_at`, `purchased_at`, `created_at`) VALUES('2009-09-04 23:12:09', NULL, '2009-09-04 23:12:09')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mLineItem Load (0.2ms)[0m   [0mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 5) [0m
+  [4;36;1mLineItem Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `line_items`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 5) [0m
+Rendered shopping_cart/_cart (7.8ms)
+Completed in 82ms (View: 6, DB: 4) | 200 OK [http://test.host/cart]
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 18:12:35) [GET]
+  Parameters: {"id"=>"current"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCart Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCart Create (0.2ms)[0m   [0mINSERT INTO `carts` (`updated_at`, `purchased_at`, `created_at`) VALUES('2009-09-04 23:12:35', NULL, '2009-09-04 23:12:35')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mLineItem Load (0.2ms)[0m   [0mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 6) [0m
+  [4;36;1mLineItem Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `line_items`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 6) [0m
+Rendered shopping_cart/_cart (7.6ms)
+Completed in 83ms (View: 6, DB: 4) | 200 OK [http://test.host/cart]
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 18:13:37) [GET]
+  Parameters: {"id"=>"current"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCart Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCart Create (0.2ms)[0m   [0mINSERT INTO `carts` (`updated_at`, `purchased_at`, `created_at`) VALUES('2009-09-04 23:13:37', NULL, '2009-09-04 23:13:37')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mLineItem Load (0.2ms)[0m   [0mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 7) [0m
+  [4;36;1mLineItem Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `line_items`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 7) [0m
+Rendered shopping_cart/_cart (7.4ms)
+Completed in 83ms (View: 7, DB: 4) | 200 OK [http://test.host/cart]
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 18:14:29) [GET]
+  Parameters: {"id"=>"current"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCart Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCart Create (0.2ms)[0m   [0mINSERT INTO `carts` (`updated_at`, `purchased_at`, `created_at`) VALUES('2009-09-04 23:14:29', NULL, '2009-09-04 23:14:29')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mLineItem Load (0.2ms)[0m   [0mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 8) [0m
+  [4;36;1mLineItem Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `line_items`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 8) [0m
+Rendered shopping_cart/_cart (7.4ms)
+Completed in 82ms (View: 6, DB: 4) | 200 OK [http://test.host/cart]
+
+
+Processing CartsController#show (for 0.0.0.0 at 2009-09-04 18:15:42) [GET]
+  Parameters: {"id"=>"current"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCart Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCart Create (0.2ms)[0m   [0mINSERT INTO `carts` (`updated_at`, `purchased_at`, `created_at`) VALUES('2009-09-04 23:15:42', NULL, '2009-09-04 23:15:42')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mLineItem Load (0.2ms)[0m   [0mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 9) [0m
+  [4;36;1mLineItem Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `line_items`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 9) [0m
+Rendered shopping_cart/_cart (7.4ms)
+Completed in 85ms (View: 6, DB: 4) | 200 OK [http://test.host/cart]

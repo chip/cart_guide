@@ -3,7 +3,11 @@ module ShoppingCart #:nodoc:
     module MapperExtensions 
       def products 
         @set.add_route("/products", {:controller => "products_controller", :action => "index"})  
-      end  
+      end
+      
+      def orders 
+        @set.add_route("/orders", {:controller => "orders_controller", :action => "index"})  
+      end
     end
   end 
 end 

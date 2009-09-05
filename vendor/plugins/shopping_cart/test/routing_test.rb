@@ -3,15 +3,19 @@ require File.dirname(__FILE__) + '/test_helper.rb'
 class RoutingTest < Test::Unit::TestCase 
   def setup 
     ActionController::Routing::Routes.draw do |map| 
-      map.products 
+      map.resources :products
+      map.resources :carts
+      map.resources :orders
     end  
   end  
   
   def test_products_route 
-    assert_recognition :get, "/products", :controller => "products_controller", :action => "index"  
+    assert_recognition :get, "/products", :controller => "products", :action => "index"  
   end  
 
-  
+  #     assert_recognition :get, "/carts", :controller => "carts", :action => "index"  
+#     assert_recognition :get, "/orders", :controller => "orders", :action => "index"  
+
 private 
 
   def assert_recognition(method, path, options)  

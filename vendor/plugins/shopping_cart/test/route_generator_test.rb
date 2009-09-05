@@ -15,28 +15,29 @@ class RouteGeneratorTest < Test::Unit::TestCase
   def test_generates_route 
     content = <<-END
       ActionController::Routing::Routes.draw do |map|
-        map.connect ':controller/:action/:id'
-        map.connect ':controller/:action/:id.:format'
       end
     END
     File.open(routes_path, 'wb') {|f| f.write(content) } 
     
-    Rails::Generator::Scripts::Generate.new.run(["order_route"], :destination => fake_rails_root)  
+    Rails::Generator::Scripts::Generate.new.run(["shopping_cart"], :destination => fake_rails_root)  
+    assert_match /map\.products/, File.read(routes_path)  
+    assert_match /map\.carts/, File.read(routes_path)  
     assert_match /map\.orders/, File.read(routes_path)  
   end  
-  
+
   def test_destroys_route 
     content = <<-END
       ActionController::Routing::Routes.draw do |map| 
-        map.orders 
-        map.connect ':controller/:action/:id' 
-        map.connect ':controller/:action/:id.:format'
-      end  
+        map.products
+        map.carts
+        map.orders
     END
     File.open(routes_path, 'wb') {|f| f.write(content) }
     
-    Rails::Generator::Scripts::Destroy.new.run(["order_route"], :destination => fake_rails_root)  
-    assert_no_match /map\.orders/, File.read(routes_path)  
+    Rails::Generator::Scripts::Destroy.new.run(["shopping_cart"], :destination => fake_rails_root)      
+    assert_no_match /map\.products/, File.read(routes_path)  
+    assert_no_match /map\.carts/, File.read(routes_path)  
+    assert_no_match /map\.orders/, File.read(routes_path)
   end  
   
   

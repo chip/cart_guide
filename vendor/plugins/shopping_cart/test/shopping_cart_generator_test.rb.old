@@ -2,7 +2,7 @@ require File.dirname(__FILE__) + '/test_helper.rb'
 require 'rails_generator' 
 require 'rails_generator/scripts/generate' 
 
-class ProductsGeneratorTest < Test::Unit::TestCase 
+class ShoppingCartGeneratorTest < Test::Unit::TestCase 
   def setup 
     FileUtils.mkdir_p(fake_rails_root)  
     @original_files = file_list 
@@ -13,9 +13,10 @@ class ProductsGeneratorTest < Test::Unit::TestCase
   end  
   
   def test_generates_correct_file_name 
-    Rails::Generator::Scripts::Generate.new.run(["products"], :destination => fake_rails_root)  
-    new_file = (file_list - @original_files).first 
-    assert_equal "products.yaml", File.basename(new_file)  
+    Rails::Generator::Scripts::Generate.new.run(["views"], :destination => fake_rails_root)  
+    new_files = (file_list - @original_files) 
+    assert_includes new_files, "_cart.html.haml"
+    assert_includes new_files, "_line_item.html.haml"
   end  
   
 private 

@@ -1,5 +1,5 @@
 require File.dirname(__FILE__) + '/test_helper.rb'
-# require 'test_helper'
+require File.dirname(__FILE__) + '/../lib/shopping_cart.rb'
 
 class ShoppingCartTest < ActiveSupport::TestCase
   load_schema
@@ -26,5 +26,4 @@ class ShoppingCartTest < ActiveSupport::TestCase
     assert_equal [], Order.all
     assert_equal [], OrderTransaction.all
   end
-  
 end
