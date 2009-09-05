@@ -1325,3 +1325,1552 @@ ActionView::MissingTemplate (Missing template carts/edit.erb in view path app/vi
   passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
 
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LineItemsController#create (for 127.0.0.1 at 2009-09-05 17:06:16) [POST]
+  Parameters: {"product_id"=>"1", "authenticity_token"=>"mPajl2aQg5S47WTgPOg1ntYWYa4JrAsslyaUlEIp5fI="}
+  [4;35;1mCart Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mCart Load (1.0ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;35;1mProduct Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (0.5ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+  [4;35;1mLineItem Load (0.1ms)[0m   [0mSELECT * FROM `line_items` WHERE (product_id = 1 AND cart_id = 1) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `line_items` WHERE (product_id = 1 AND cart_id = 1) LIMIT 1[0m
+  [4;35;1mLineItem Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `line_items`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLineItem Update (0.2ms)[0m   [0mUPDATE `line_items` SET `quantity` = 2, `updated_at` = '2009-09-05 22:06:16' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://cart_guide.local/carts/1/edit
+Completed in 144ms (DB: 6) | 302 Found [http://cart_guide.local/line_items?product_id=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CartsController#edit (for 127.0.0.1 at 2009-09-05 17:06:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCart Load (0.3ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+edit cart id: 1
+
+ActionView::MissingTemplate (Missing template carts/edit.erb in view path app/views):
+  haml (2.0.9) rails/./lib/sass/plugin/rails.rb:19:in `process'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LineItemsController#create (for 127.0.0.1 at 2009-09-05 17:07:42) [POST]
+  Parameters: {"product_id"=>"1", "authenticity_token"=>"mPajl2aQg5S47WTgPOg1ntYWYa4JrAsslyaUlEIp5fI="}
+  [4;36;1mCart Load (1.0ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+  [4;36;1mLineItem Load (0.1ms)[0m   [0;1mSELECT * FROM `line_items` WHERE (product_id = 1 AND cart_id = 1) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `line_items` WHERE (product_id = 1 AND cart_id = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLineItem Update (0.4ms)[0m   [0mUPDATE `line_items` SET `quantity` = 3, `updated_at` = '2009-09-05 22:07:42' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://cart_guide.local/carts/1/edit
+Completed in 6ms (DB: 2) | 302 Found [http://cart_guide.local/line_items?product_id=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CartsController#edit (for 127.0.0.1 at 2009-09-05 17:07:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCart Load (0.2ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+edit cart id: 1
+Rendering template within layouts/carts
+Rendering carts/edit
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mLineItem Load (0.2ms)[0m   [0;1mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+
+ActionView::TemplateError (undefined method `product_image' for #<ActionView::Base:0x25a010c>) on line #7 of app/views/carts/_line_item.html.haml:
+4: - fields_for "#{prefix}[]", line_item do |item_form|
+5:   %tr{:class => "#{cycle :odd, :even}", :id => "line_item_#{line_item.id}"}
+6:     %td
+7:       = product_image(line_item.product.id)
+8:       = h line_item.product.name
+9:     %td.qty{:align => 'right'}
+10:       - if ['edit', 'update'].include?(params[:action])
+
+    app/views/carts/_line_item.html.haml:7:in `_run_haml_app47views47carts47_line_item46html46haml_locals_line_item_line_item_counter_object'
+    app/views/carts/_line_item.html.haml:4:in `_run_haml_app47views47carts47_line_item46html46haml_locals_line_item_line_item_counter_object'
+    haml (2.0.9) lib/haml/helpers/action_view_mods.rb:12:in `render'
+    haml (2.0.9) lib/haml/helpers.rb:57:in `non_haml'
+    haml (2.0.9) lib/haml/helpers/action_view_mods.rb:12:in `render'
+    app/views/carts/_cart.html.haml:21:in `_run_haml_app47views47carts47_cart46html46haml_locals_cart_object'
+    haml (2.0.9) lib/haml/helpers/action_view_mods.rb:142:in `call'
+    haml (2.0.9) lib/haml/helpers/action_view_mods.rb:142:in `form_tag'
+    haml (2.0.9) lib/haml/helpers.rb:447:in `call'
+    haml (2.0.9) lib/haml/helpers.rb:447:in `haml_bind_proc'
+    haml (2.0.9) lib/haml/helpers.rb:261:in `call'
+    haml (2.0.9) lib/haml/helpers.rb:261:in `capture_haml'
+    haml (2.0.9) lib/haml/helpers.rb:430:in `with_haml_buffer'
+    haml (2.0.9) lib/haml/helpers.rb:258:in `capture_haml'
+    haml (2.0.9) lib/haml/helpers/action_view_mods.rb:90:in `capture'
+    haml (2.0.9) lib/haml/helpers/action_view_mods.rb:148:in `form_tag'
+    app/views/carts/_cart.html.haml:1:in `_run_haml_app47views47carts47_cart46html46haml_locals_cart_object'
+    haml (2.0.9) lib/haml/helpers/action_view_mods.rb:12:in `render'
+    haml (2.0.9) lib/haml/helpers.rb:57:in `non_haml'
+    haml (2.0.9) lib/haml/helpers/action_view_mods.rb:12:in `render'
+    app/views/carts/edit.html.haml:2:in `_run_haml_app47views47carts47edit46html46haml'
+    haml (2.0.9) lib/haml/helpers/action_view_mods.rb:14:in `render'
+    haml (2.0.9) lib/haml/helpers/action_view_mods.rb:14:in `render'
+    haml (2.0.9) rails/./lib/sass/plugin/rails.rb:19:in `process'
+    passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+    passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+    passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+    passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+    passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+    passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+    passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (119.1ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LineItemsController#create (for 127.0.0.1 at 2009-09-05 17:08:42) [POST]
+  Parameters: {"product_id"=>"1", "authenticity_token"=>"mPajl2aQg5S47WTgPOg1ntYWYa4JrAsslyaUlEIp5fI="}
+  [4;35;1mCart Load (0.5ms)[0m   [0mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+  [4;35;1mLineItem Load (0.1ms)[0m   [0mSELECT * FROM `line_items` WHERE (product_id = 1 AND cart_id = 1) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `line_items` WHERE (product_id = 1 AND cart_id = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLineItem Update (0.2ms)[0m   [0;1mUPDATE `line_items` SET `quantity` = 4, `updated_at` = '2009-09-05 22:08:42' WHERE `id` = 1[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://cart_guide.local/carts/1/edit
+Completed in 5ms (DB: 2) | 302 Found [http://cart_guide.local/line_items?product_id=1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CartsController#edit (for 127.0.0.1 at 2009-09-05 17:08:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCart Load (0.2ms)[0m   [0mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+edit cart id: 1
+Rendering template within layouts/carts
+Rendering carts/edit
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;35;1mLineItem Load (0.1ms)[0m   [0mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendered carts/_line_item (4.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+Rendered carts/_cart (9.6ms)
+Completed in 13ms (View: 11, DB: 1) | 200 OK [http://cart_guide.local/carts/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LineItemsController#destroy (for 127.0.0.1 at 2009-09-05 17:10:09) [DELETE]
+  Parameters: {"authenticity_token"=>"mPajl2aQg5S47WTgPOg1ntYWYa4JrAsslyaUlEIp5fI=", "id"=>"1"}
+  [4;35;1mCart Load (0.2ms)[0m   [0mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;36;1mLineItem Load (0.2ms)[0m   [0;1mSELECT * FROM `line_items` WHERE (cart_id = 1 and id = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mLineItem Destroy (0.2ms)[0m   [0;1mDELETE FROM `line_items` WHERE `id` = 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://cart_guide.local/carts/1/edit
+Completed in 3ms (DB: 1) | 302 Found [http://cart_guide.local/line_items/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CartsController#edit (for 127.0.0.1 at 2009-09-05 17:10:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCart Load (0.2ms)[0m   [0mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+edit cart id: 1
+Rendering template within layouts/carts
+Rendering carts/edit
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+Rendered carts/_cart (1.6ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://cart_guide.local/carts/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-05 17:10:10) [GET]
+
+NoMethodError (undefined method `get_cart' for #<ProductsController:0x254b094>):
+  haml (2.0.9) rails/./lib/sass/plugin/rails.rb:19:in `process'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (24.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-05 17:10:28) [GET]
+
+NoMethodError (undefined method `get_cart' for #<ProductsController:0x2388540>):
+  haml (2.0.9) rails/./lib/sass/plugin/rails.rb:19:in `process'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (24.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-05 17:10:46) [GET]
+  [4;35;1mCart Columns (57.5ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mCart Load (0.3ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` [0m
+  [4;36;1mProduct Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered products/_product (5.1ms)
+Rendered products/_product (0.5ms)
+Rendered products/_product (0.4ms)
+Completed in 200ms (View: 9, DB: 59) | 200 OK [http://cart_guide.local/products]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LineItemsController#create (for 127.0.0.1 at 2009-09-05 17:10:56) [POST]
+  Parameters: {"product_id"=>"2", "authenticity_token"=>"mPajl2aQg5S47WTgPOg1ntYWYa4JrAsslyaUlEIp5fI="}
+  [4;36;1mCart Load (0.3ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+  [4;36;1mLineItem Load (0.1ms)[0m   [0;1mSELECT * FROM `line_items` WHERE (product_id = 2 AND cart_id = 1) LIMIT 1[0m
+  [4;35;1mLineItem Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `line_items`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLineItem Create (0.2ms)[0m   [0mINSERT INTO `line_items` (`updated_at`, `product_id`, `quantity`, `unit_price`, `cart_id`, `created_at`) VALUES('2009-09-05 22:10:56', 2, 1, 29, 1, '2009-09-05 22:10:56')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://cart_guide.local/carts/1/edit
+Completed in 10ms (DB: 3) | 302 Found [http://cart_guide.local/line_items?product_id=2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CartsController#edit (for 127.0.0.1 at 2009-09-05 17:10:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCart Load (0.2ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+edit cart id: 1
+Rendering template within layouts/carts
+Rendering carts/edit
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mLineItem Load (0.1ms)[0m   [0;1mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendered carts/_line_item (3.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+Rendered carts/_cart (11.9ms)
+Completed in 24ms (View: 21, DB: 1) | 200 OK [http://cart_guide.local/carts/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CartsController#update (for 127.0.0.1 at 2009-09-05 17:11:01) [PUT]
+  Parameters: {"cart"=>{"existing_line_item_attributes"=>{"2"=>{"quantity"=>"3"}}}, "commit"=>"Update Quantities", "authenticity_token"=>"mPajl2aQg5S47WTgPOg1ntYWYa4JrAsslyaUlEIp5fI=", "id"=>"1"}
+  [4;36;1mCart Load (2.1ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;35;1mLineItem Load (0.5ms)[0m   [0mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLineItem Update (0.3ms)[0m   [0mUPDATE `line_items` SET `quantity` = 3, `updated_at` = '2009-09-05 22:11:01' WHERE `id` = 2[0m
+  [4;36;1mSQL (19.9ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/carts
+Rendering carts/edit
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendered carts/_line_item (3.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+Rendered carts/_cart (5.9ms)
+Completed in 34ms (View: 7, DB: 23) | 200 OK [http://cart_guide.local/carts/1]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-05 17:11:07) [GET]
+  [4;35;1mCart Load (0.8ms)[0m   [0mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendered products/_product (2.2ms)
+Rendered products/_product (0.4ms)
+Rendered products/_product (0.4ms)
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://cart_guide.local/products]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LineItemsController#create (for 127.0.0.1 at 2009-09-05 17:11:08) [POST]
+  Parameters: {"product_id"=>"1", "authenticity_token"=>"mPajl2aQg5S47WTgPOg1ntYWYa4JrAsslyaUlEIp5fI="}
+  [4;36;1mCart Load (1.9ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+  [4;36;1mLineItem Load (0.3ms)[0m   [0;1mSELECT * FROM `line_items` WHERE (product_id = 1 AND cart_id = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLineItem Create (0.1ms)[0m   [0;1mINSERT INTO `line_items` (`updated_at`, `product_id`, `quantity`, `unit_price`, `cart_id`, `created_at`) VALUES('2009-09-05 22:11:08', 1, 1, 19, 1, '2009-09-05 22:11:08')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://cart_guide.local/carts/1/edit
+Completed in 7ms (DB: 4) | 302 Found [http://cart_guide.local/line_items?product_id=1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CartsController#edit (for 127.0.0.1 at 2009-09-05 17:11:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCart Load (0.2ms)[0m   [0mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+edit cart id: 1
+Rendering template within layouts/carts
+Rendering carts/edit
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;35;1mLineItem Load (0.1ms)[0m   [0mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendered carts/_line_item (3.4ms)
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendered carts/_line_item (1.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+Rendered carts/_cart (8.2ms)
+Completed in 10ms (View: 9, DB: 1) | 200 OK [http://cart_guide.local/carts/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CartsController#update (for 127.0.0.1 at 2009-09-05 17:11:14) [PUT]
+  Parameters: {"cart"=>{"existing_line_item_attributes"=>{"2"=>{"quantity"=>"3"}, "3"=>{"quantity"=>"2"}}}, "commit"=>"Update Quantities", "authenticity_token"=>"mPajl2aQg5S47WTgPOg1ntYWYa4JrAsslyaUlEIp5fI=", "id"=>"1"}
+  [4;36;1mCart Load (1.7ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;35;1mLineItem Load (0.2ms)[0m   [0mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLineItem Update (17.4ms)[0m   [0mUPDATE `line_items` SET `quantity` = 2, `updated_at` = '2009-09-05 22:11:14' WHERE `id` = 3[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/carts
+Rendering carts/edit
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendered carts/_line_item (3.1ms)
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendered carts/_line_item (1.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+Rendered carts/_cart (7.4ms)
+Completed in 34ms (View: 8, DB: 20) | 200 OK [http://cart_guide.local/carts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-05 17:11:23) [GET]
+  [4;36;1mCart Load (0.3ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM `products` [0m
+Rendered products/_product (2.2ms)
+Rendered products/_product (0.4ms)
+Rendered products/_product (0.4ms)
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://cart_guide.local/products]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LineItemsController#create (for 127.0.0.1 at 2009-09-05 17:11:24) [POST]
+  Parameters: {"product_id"=>"3", "authenticity_token"=>"mPajl2aQg5S47WTgPOg1ntYWYa4JrAsslyaUlEIp5fI="}
+  [4;35;1mCart Load (0.2ms)[0m   [0mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 3) [0m
+  [4;35;1mLineItem Load (0.1ms)[0m   [0mSELECT * FROM `line_items` WHERE (product_id = 3 AND cart_id = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLineItem Create (0.1ms)[0m   [0mINSERT INTO `line_items` (`updated_at`, `product_id`, `quantity`, `unit_price`, `cart_id`, `created_at`) VALUES('2009-09-05 22:11:24', 3, 1, 9, 1, '2009-09-05 22:11:24')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://cart_guide.local/carts/1/edit
+Completed in 4ms (DB: 1) | 302 Found [http://cart_guide.local/line_items?product_id=3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CartsController#edit (for 127.0.0.1 at 2009-09-05 17:11:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCart Load (0.4ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+edit cart id: 1
+Rendering template within layouts/carts
+Rendering carts/edit
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mLineItem Load (0.1ms)[0m   [0;1mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendered carts/_line_item (3.2ms)
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendered carts/_line_item (1.5ms)
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 3) [0m
+Rendered carts/_line_item (1.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+Rendered carts/_cart (9.7ms)
+Completed in 12ms (View: 10, DB: 1) | 200 OK [http://cart_guide.local/carts/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CartsController#update (for 127.0.0.1 at 2009-09-05 17:11:39) [PUT]
+  Parameters: {"cart"=>{"existing_line_item_attributes"=>{"2"=>{"quantity"=>"1"}, "3"=>{"quantity"=>"2"}, "4"=>{"quantity"=>"2"}}}, "commit"=>"Update Quantities", "authenticity_token"=>"mPajl2aQg5S47WTgPOg1ntYWYa4JrAsslyaUlEIp5fI=", "id"=>"1"}
+  [4;36;1mCart Load (0.2ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;35;1mLineItem Load (0.7ms)[0m   [0mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLineItem Update (0.2ms)[0m   [0mUPDATE `line_items` SET `quantity` = 1, `updated_at` = '2009-09-05 22:11:39' WHERE `id` = 2[0m
+  [4;36;1mLineItem Update (0.2ms)[0m   [0;1mUPDATE `line_items` SET `quantity` = 2, `updated_at` = '2009-09-05 22:11:39' WHERE `id` = 4[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/carts
+Rendering carts/edit
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendered carts/_line_item (4.2ms)
+  [4;36;1mProduct Load (0.5ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendered carts/_line_item (2.3ms)
+  [4;35;1mProduct Load (1.5ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 3) [0m
+Rendered carts/_line_item (3.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+Rendered carts/_cart (14.1ms)
+Completed in 27ms (View: 12, DB: 7) | 200 OK [http://cart_guide.local/carts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LineItemsController#destroy (for 127.0.0.1 at 2009-09-05 17:11:53) [DELETE]
+  Parameters: {"authenticity_token"=>"mPajl2aQg5S47WTgPOg1ntYWYa4JrAsslyaUlEIp5fI=", "id"=>"3"}
+  [4;36;1mCart Load (0.3ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;35;1mLineItem Load (0.2ms)[0m   [0mSELECT * FROM `line_items` WHERE (cart_id = 1 and id = '3') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLineItem Destroy (0.1ms)[0m   [0mDELETE FROM `line_items` WHERE `id` = 3[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://cart_guide.local/carts/1/edit
+Completed in 3ms (DB: 1) | 302 Found [http://cart_guide.local/line_items/3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CartsController#edit (for 127.0.0.1 at 2009-09-05 17:11:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCart Load (0.2ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+edit cart id: 1
+Rendering template within layouts/carts
+Rendering carts/edit
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mLineItem Load (0.1ms)[0m   [0;1mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendered carts/_line_item (3.3ms)
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 3) [0m
+Rendered carts/_line_item (1.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+Rendered carts/_cart (8.0ms)
+Completed in 10ms (View: 9, DB: 1) | 200 OK [http://cart_guide.local/carts/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2009-09-05 17:12:04) [GET]
+
+NameError (uninitialized constant OrdersController):
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (22.6ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2009-09-05 17:12:28) [GET]
+
+NameError (uninitialized constant OrdersController):
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (21.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CartsController#update (for 127.0.0.1 at 2009-09-05 17:13:26) [PUT]
+  Parameters: {"cart"=>{"existing_line_item_attributes"=>{"2"=>{"quantity"=>"1"}, "4"=>{"quantity"=>"2"}}}, "commit"=>"Update Quantities", "authenticity_token"=>"mPajl2aQg5S47WTgPOg1ntYWYa4JrAsslyaUlEIp5fI=", "id"=>"1"}
+  [4;35;1mCart Load (0.4ms)[0m   [0mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;36;1mLineItem Load (0.2ms)[0m   [0;1mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/carts
+Rendering carts/edit
+  [4;35;1mSQL (2.8ms)[0m   [0mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendered carts/_line_item (3.7ms)
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 3) [0m
+Rendered carts/_line_item (1.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+Rendered carts/_cart (11.8ms)
+Completed in 21ms (View: 10, DB: 4) | 200 OK [http://cart_guide.local/carts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2009-09-05 17:13:29) [GET]
+
+NameError (uninitialized constant OrdersController):
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (24.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2009-09-05 17:16:18) [GET]
+
+NoMethodError (undefined method `get_cart' for #<OrdersController:0x2275e8c>):
+  haml (2.0.9) rails/./lib/sass/plugin/rails.rb:19:in `process'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (91.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2009-09-05 17:16:32) [GET]
+
+NoMethodError (undefined method `get_cart' for #<OrdersController:0x25a5120>):
+  haml (2.0.9) rails/./lib/sass/plugin/rails.rb:19:in `process'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (28.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2009-09-05 17:16:45) [GET]
+  [4;35;1mCart Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mCart Load (0.3ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;35;1mLineItem Load (0.4ms)[0m   [0mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mLineItem Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `line_items`[0m
+
+NoMethodError (undefined method `logged_in?' for #<OrdersController:0x21dacfc>):
+  haml (2.0.9) rails/./lib/sass/plugin/rails.rb:19:in `process'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (25.0ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2009-09-05 17:19:55) [GET]
+  [4;36;1mCart Load (0.7ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;35;1mLineItem Load (0.2ms)[0m   [0mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+
+NoMethodError (undefined method `logged_in?' for #<OrdersController:0x24e9510>):
+  haml (2.0.9) rails/./lib/sass/plugin/rails.rb:19:in `process'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (24.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2009-09-05 17:20:03) [GET]
+  [4;35;1mCart Columns (48.1ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mCart Load (0.2ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;35;1mOrder Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mBillingAddress Columns (0.0ms)[0m   [0;1mMysql::Error: Table 'shopping_cart_development.billing_addresses' doesn't exist: SHOW FIELDS FROM `billing_addresses`[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'shopping_cart_development.billing_addresses' doesn't exist: SHOW FIELDS FROM `billing_addresses`):
+  haml (2.0.9) rails/./lib/sass/plugin/rails.rb:19:in `process'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (27.6ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateShoppingCartTables (20090905222232)
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (10.2ms)[0m   [0;1mDROP TABLE `products`[0m
+  [4;35;1mSQL (18.2ms)[0m   [0mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `price` int(11), `created_at` datetime, `updated_at` datetime, `image` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.6ms)[0m   [0mDROP TABLE `carts`[0m
+  [4;36;1mSQL (5.1ms)[0m   [0;1mCREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `purchased_at` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (5.6ms)[0m   [0;1mDROP TABLE `line_items`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `unit_price` integer, `product_id` int(11), `cart_id` int(11), `quantity` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (17.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mDROP TABLE `orders`[0m
+  [4;36;1mSQL (5.3ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `cart_id` int(11), `ip_address` varchar(255), `first_name` varchar(255), `last_name` varchar(255), `card_type` varchar(255), `card_expires_on` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (16.9ms)[0m   [0;1mDROP TABLE `order_transactions`[0m
+  [4;35;1mSQL (19.7ms)[0m   [0mCREATE TABLE `order_transactions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `order_id` int(11), `action` varchar(255), `amount` int(11), `success` tinyint(1), `authorization` varchar(255), `message` varchar(255), `params` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (5.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mCREATE TABLE `billing_addresses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `address1` varchar(255), `city` varchar(255), `billing_state` varchar(255), `country` varchar(255), `zip` varchar(255), `order_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090905222232')[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (4.1ms)[0m   [0;1mSHOW FIELDS FROM `billing_addresses`[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mdescribe `billing_addresses`[0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mSHOW KEYS FROM `billing_addresses`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mdescribe `carts`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSHOW KEYS FROM `carts`[0m
+  [4;36;1mSQL (3.9ms)[0m   [0;1mSHOW FIELDS FROM `line_items`[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mdescribe `line_items`[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSHOW KEYS FROM `line_items`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSHOW FIELDS FROM `order_transactions`[0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mdescribe `order_transactions`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `order_transactions`[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mSQL (7.2ms)[0m   [0mdescribe `orders`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSHOW KEYS FROM `orders`[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (4.5ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (3.8ms)[0m   [0;1mSHOW FIELDS FROM `shopping_cart_carts`[0m
+  [4;35;1mSQL (4.9ms)[0m   [0mdescribe `shopping_cart_carts`[0m
+  [4;36;1mSQL (4.7ms)[0m   [0;1mSHOW KEYS FROM `shopping_cart_carts`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSHOW FIELDS FROM `shopping_cart_line_items`[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mdescribe `shopping_cart_line_items`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `shopping_cart_line_items`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSHOW FIELDS FROM `shopping_cart_order_transactions`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mdescribe `shopping_cart_order_transactions`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `shopping_cart_order_transactions`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mSHOW FIELDS FROM `shopping_cart_orders`[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mdescribe `shopping_cart_orders`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `shopping_cart_orders`[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mSHOW FIELDS FROM `shopping_cart_products`[0m
+  [4;35;1mSQL (7.6ms)[0m   [0mdescribe `shopping_cart_products`[0m
+  [4;36;1mSQL (9.8ms)[0m   [0;1mSHOW KEYS FROM `shopping_cart_products`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2009-09-05 17:22:52) [GET]
+  [4;35;1mCart Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mCart Load (1.0ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Cart with ID=1):
+  haml (2.0.9) rails/./lib/sass/plugin/rails.rb:19:in `process'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (27.8ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-05 17:23:03) [GET]
+  [4;36;1mCart Load (0.4ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Cart with ID=1):
+  haml (2.0.9) rails/./lib/sass/plugin/rails.rb:19:in `process'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (28.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-05 17:23:19) [GET]
+  [4;36;1mCart Load (0.4ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Cart with ID=1):
+  haml (2.0.9) rails/./lib/sass/plugin/rails.rb:19:in `process'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (33.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProduct Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Create (0.2ms)[0m   [0mINSERT INTO `products` (`name`, `updated_at`, `price`, `description`, `image`, `created_at`) VALUES('HOD T', '2009-09-05 22:23:39', 19, 'Head of Doom Logo T-shirt with long sleeves', NULL, '2009-09-05 22:23:39')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProduct Create (0.1ms)[0m   [0;1mINSERT INTO `products` (`name`, `updated_at`, `price`, `description`, `image`, `created_at`) VALUES('HOD LS', '2009-09-05 22:23:39', 29, 'Head of Doom Logo shirt with long sleeves', NULL, '2009-09-05 22:23:39')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Create (0.1ms)[0m   [0mINSERT INTO `products` (`name`, `updated_at`, `price`, `description`, `image`, `created_at`) VALUES('HOD Mug', '2009-09-05 22:23:39', 9, 'Head of Doom Logo Coffee Mug', NULL, '2009-09-05 22:23:39')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-05 17:23:42) [GET]
+  [4;36;1mCart Load (0.4ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Cart with ID=1):
+  haml (2.0.9) rails/./lib/sass/plugin/rails.rb:19:in `process'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (84.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-05 17:23:51) [GET]
+  [4;35;1mCart Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mCart Load (0.2ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Cart with ID=1):
+  haml (2.0.9) rails/./lib/sass/plugin/rails.rb:19:in `process'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (27.7ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mMysql::Error: Table 'shopping_cart_development.sessions' doesn't exist: DELETE FROM sessions[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-05 17:24:25) [GET]
+  [4;36;1mCart Load (0.6ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Cart with ID=1):
+  haml (2.0.9) rails/./lib/sass/plugin/rails.rb:19:in `process'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (27.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-05 17:24:25) [GET]
+  [4;36;1mCart Load (3.6ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Cart with ID=1):
+  haml (2.0.9) rails/./lib/sass/plugin/rails.rb:19:in `process'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (29.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-05 17:24:33) [GET]
+  [4;36;1mCart Load (0.3ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Cart with ID=1):
+  haml (2.0.9) rails/./lib/sass/plugin/rails.rb:19:in `process'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (86.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-05 17:24:35) [GET]
+  [4;36;1mCart Load (3.2ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Cart with ID=1):
+  haml (2.0.9) rails/./lib/sass/plugin/rails.rb:19:in `process'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (27.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-05 17:25:45) [GET]
+  [4;35;1mCart Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mCart Load (0.2ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Cart with ID=1):
+  haml (2.0.9) rails/./lib/sass/plugin/rails.rb:19:in `process'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (27.1ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-05 17:26:49) [GET]
+session[:cart_id]=1
+  [4;35;1mCart Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mCart Load (0.2ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Cart with ID=1):
+  haml (2.0.9) rails/./lib/sass/plugin/rails.rb:19:in `process'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (27.7ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-05 17:27:21) [GET]
+session[:cart_id]=
+  [4;35;1mCart Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCart Create (0.3ms)[0m   [0mINSERT INTO `carts` (`updated_at`, `purchased_at`, `created_at`) VALUES('2009-09-05 22:27:21', NULL, '2009-09-05 22:27:21')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` [0m
+  [4;36;1mProduct Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered products/_product (4.7ms)
+Rendered products/_product (0.5ms)
+Rendered products/_product (0.4ms)
+Completed in 177ms (View: 37, DB: 4) | 200 OK [http://cart_guide.local/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-05 17:27:35) [GET]
+session[:cart_id]=1
+  [4;35;1mCart Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `carts`[0m
+  [4;36;1mCart Load (0.3ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` [0m
+  [4;36;1mProduct Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered products/_product (4.6ms)
+Rendered products/_product (0.4ms)
+Rendered products/_product (0.5ms)
+Completed in 141ms (View: 8, DB: 3) | 200 OK [http://cart_guide.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LineItemsController#create (for 127.0.0.1 at 2009-09-05 17:27:36) [POST]
+  Parameters: {"product_id"=>"1", "authenticity_token"=>"mPajl2aQg5S47WTgPOg1ntYWYa4JrAsslyaUlEIp5fI="}
+session[:cart_id]=1
+  [4;36;1mCart Load (0.2ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+  [4;36;1mLineItem Load (0.2ms)[0m   [0;1mSELECT * FROM `line_items` WHERE (product_id = 1 AND cart_id = 1) LIMIT 1[0m
+session[:cart_id]=1
+  [4;35;1mLineItem Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `line_items`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLineItem Create (0.2ms)[0m   [0mINSERT INTO `line_items` (`updated_at`, `product_id`, `quantity`, `unit_price`, `cart_id`, `created_at`) VALUES('2009-09-05 22:27:36', 1, 1, 19, 1, '2009-09-05 22:27:36')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://cart_guide.local/carts/1/edit
+Completed in 15ms (DB: 4) | 302 Found [http://cart_guide.local/line_items?product_id=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CartsController#edit (for 127.0.0.1 at 2009-09-05 17:27:36) [GET]
+  Parameters: {"id"=>"1"}
+session[:cart_id]=1
+  [4;36;1mCart Load (0.3ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+edit cart id: 1
+Rendering template within layouts/carts
+Rendering carts/edit
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mLineItem Load (0.1ms)[0m   [0;1mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendered carts/_line_item (3.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+Rendered carts/_cart (12.0ms)
+Completed in 24ms (View: 21, DB: 1) | 200 OK [http://cart_guide.local/carts/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CartsController#update (for 127.0.0.1 at 2009-09-05 17:27:39) [PUT]
+  Parameters: {"cart"=>{"existing_line_item_attributes"=>{"1"=>{"quantity"=>"2"}}}, "commit"=>"Update Quantities", "authenticity_token"=>"mPajl2aQg5S47WTgPOg1ntYWYa4JrAsslyaUlEIp5fI=", "id"=>"1"}
+session[:cart_id]=1
+  [4;36;1mCart Load (3.8ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;35;1mLineItem Load (0.2ms)[0m   [0mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLineItem Update (0.5ms)[0m   [0mUPDATE `line_items` SET `quantity` = 2, `updated_at` = '2009-09-05 22:27:39' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/carts
+Rendering carts/edit
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendered carts/_line_item (3.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+Rendered carts/_cart (7.9ms)
+Completed in 20ms (View: 9, DB: 6) | 200 OK [http://cart_guide.local/carts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-05 17:27:40) [GET]
+session[:cart_id]=1
+  [4;35;1mCart Load (0.3ms)[0m   [0mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendered products/_product (2.1ms)
+Rendered products/_product (0.5ms)
+Rendered products/_product (0.4ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://cart_guide.local/products]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LineItemsController#create (for 127.0.0.1 at 2009-09-05 17:27:41) [POST]
+  Parameters: {"product_id"=>"2", "authenticity_token"=>"mPajl2aQg5S47WTgPOg1ntYWYa4JrAsslyaUlEIp5fI="}
+session[:cart_id]=1
+  [4;36;1mCart Load (2.3ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+  [4;36;1mLineItem Load (0.2ms)[0m   [0;1mSELECT * FROM `line_items` WHERE (product_id = 2 AND cart_id = 1) LIMIT 1[0m
+session[:cart_id]=1
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLineItem Create (0.2ms)[0m   [0;1mINSERT INTO `line_items` (`updated_at`, `product_id`, `quantity`, `unit_price`, `cart_id`, `created_at`) VALUES('2009-09-05 22:27:41', 2, 1, 29, 1, '2009-09-05 22:27:41')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://cart_guide.local/carts/1/edit
+Completed in 9ms (DB: 4) | 302 Found [http://cart_guide.local/line_items?product_id=2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CartsController#edit (for 127.0.0.1 at 2009-09-05 17:27:41) [GET]
+  Parameters: {"id"=>"1"}
+session[:cart_id]=1
+  [4;35;1mCart Load (0.2ms)[0m   [0mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+edit cart id: 1
+Rendering template within layouts/carts
+Rendering carts/edit
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;35;1mLineItem Load (0.2ms)[0m   [0mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendered carts/_line_item (3.3ms)
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendered carts/_line_item (1.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+Rendered carts/_cart (8.4ms)
+Completed in 11ms (View: 9, DB: 1) | 200 OK [http://cart_guide.local/carts/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CartsController#update (for 127.0.0.1 at 2009-09-05 17:27:44) [PUT]
+  Parameters: {"cart"=>{"existing_line_item_attributes"=>{"1"=>{"quantity"=>"2"}, "2"=>{"quantity"=>"3"}}}, "commit"=>"Update Quantities", "authenticity_token"=>"mPajl2aQg5S47WTgPOg1ntYWYa4JrAsslyaUlEIp5fI=", "id"=>"1"}
+session[:cart_id]=1
+  [4;36;1mCart Load (0.3ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;35;1mLineItem Load (0.3ms)[0m   [0mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mSQL (4.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLineItem Update (0.2ms)[0m   [0mUPDATE `line_items` SET `quantity` = 3, `updated_at` = '2009-09-05 22:27:44' WHERE `id` = 2[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/carts
+Rendering carts/edit
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendered carts/_line_item (3.5ms)
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendered carts/_line_item (1.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+Rendered carts/_cart (8.8ms)
+Completed in 24ms (View: 10, DB: 6) | 200 OK [http://cart_guide.local/carts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-05 17:27:48) [GET]
+session[:cart_id]=1
+  [4;36;1mCart Load (0.3ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM `products` [0m
+Rendered products/_product (2.1ms)
+Rendered products/_product (0.4ms)
+Rendered products/_product (0.4ms)
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://cart_guide.local/products]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LineItemsController#create (for 127.0.0.1 at 2009-09-05 17:27:49) [POST]
+  Parameters: {"product_id"=>"3", "authenticity_token"=>"mPajl2aQg5S47WTgPOg1ntYWYa4JrAsslyaUlEIp5fI="}
+session[:cart_id]=1
+  [4;35;1mCart Load (2.4ms)[0m   [0mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 3) [0m
+  [4;35;1mLineItem Load (0.3ms)[0m   [0mSELECT * FROM `line_items` WHERE (product_id = 3 AND cart_id = 1) LIMIT 1[0m
+session[:cart_id]=1
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLineItem Create (0.3ms)[0m   [0mINSERT INTO `line_items` (`updated_at`, `product_id`, `quantity`, `unit_price`, `cart_id`, `created_at`) VALUES('2009-09-05 22:27:49', 3, 1, 9, 1, '2009-09-05 22:27:49')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://cart_guide.local/carts/1/edit
+Completed in 8ms (DB: 4) | 302 Found [http://cart_guide.local/line_items?product_id=3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CartsController#edit (for 127.0.0.1 at 2009-09-05 17:27:49) [GET]
+  Parameters: {"id"=>"1"}
+session[:cart_id]=1
+  [4;36;1mCart Load (0.2ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+edit cart id: 1
+Rendering template within layouts/carts
+Rendering carts/edit
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mLineItem Load (0.2ms)[0m   [0;1mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendered carts/_line_item (3.5ms)
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendered carts/_line_item (1.6ms)
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 3) [0m
+Rendered carts/_line_item (1.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+Rendered carts/_cart (11.1ms)
+Completed in 14ms (View: 12, DB: 1) | 200 OK [http://cart_guide.local/carts/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-09-05 17:27:53) [GET]
+session[:cart_id]=1
+  [4;36;1mCart Load (0.4ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` [0m
+Rendered products/_product (2.4ms)
+Rendered products/_product (0.5ms)
+Rendered products/_product (0.5ms)
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://cart_guide.local/products]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LineItemsController#create (for 127.0.0.1 at 2009-09-05 17:27:54) [POST]
+  Parameters: {"product_id"=>"2", "authenticity_token"=>"mPajl2aQg5S47WTgPOg1ntYWYa4JrAsslyaUlEIp5fI="}
+session[:cart_id]=1
+  [4;35;1mCart Load (2.5ms)[0m   [0mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+  [4;35;1mLineItem Load (0.2ms)[0m   [0mSELECT * FROM `line_items` WHERE (product_id = 2 AND cart_id = 1) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `line_items` WHERE (product_id = 2 AND cart_id = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mLineItem Update (0.2ms)[0m   [0;1mUPDATE `line_items` SET `quantity` = 4, `updated_at` = '2009-09-05 22:27:54' WHERE `id` = 2[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://cart_guide.local/carts/1/edit
+Completed in 9ms (DB: 5) | 302 Found [http://cart_guide.local/line_items?product_id=2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CartsController#edit (for 127.0.0.1 at 2009-09-05 17:27:54) [GET]
+  Parameters: {"id"=>"1"}
+session[:cart_id]=1
+  [4;35;1mCart Load (0.2ms)[0m   [0mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+edit cart id: 1
+Rendering template within layouts/carts
+Rendering carts/edit
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;35;1mLineItem Load (0.1ms)[0m   [0mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendered carts/_line_item (3.4ms)
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendered carts/_line_item (1.6ms)
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 3) [0m
+Rendered carts/_line_item (1.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+Rendered carts/_cart (10.8ms)
+Completed in 14ms (View: 12, DB: 1) | 200 OK [http://cart_guide.local/carts/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LineItemsController#destroy (for 127.0.0.1 at 2009-09-05 17:28:15) [DELETE]
+  Parameters: {"authenticity_token"=>"mPajl2aQg5S47WTgPOg1ntYWYa4JrAsslyaUlEIp5fI=", "id"=>"3"}
+session[:cart_id]=1
+  [4;35;1mCart Load (0.2ms)[0m   [0mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;36;1mLineItem Load (0.2ms)[0m   [0;1mSELECT * FROM `line_items` WHERE (cart_id = 1 and id = '3') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLineItem Destroy (0.1ms)[0m   [0;1mDELETE FROM `line_items` WHERE `id` = 3[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://cart_guide.local/carts/1/edit
+Completed in 3ms (DB: 1) | 302 Found [http://cart_guide.local/line_items/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CartsController#edit (for 127.0.0.1 at 2009-09-05 17:28:15) [GET]
+  Parameters: {"id"=>"1"}
+session[:cart_id]=1
+  [4;35;1mCart Load (0.2ms)[0m   [0mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+edit cart id: 1
+Rendering template within layouts/carts
+Rendering carts/edit
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;35;1mLineItem Load (0.6ms)[0m   [0mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendered carts/_line_item (3.5ms)
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendered carts/_line_item (1.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+Rendered carts/_cart (10.1ms)
+Completed in 13ms (View: 11, DB: 2) | 200 OK [http://cart_guide.local/carts/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2009-09-05 17:28:17) [GET]
+session[:cart_id]=1
+  [4;36;1mCart Load (0.3ms)[0m   [0;1mSELECT * FROM `carts` WHERE (`carts`.`id` = 1) [0m
+  [4;35;1mOrder Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mBillingAddress Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `billing_addresses`[0m
+  [4;35;1mLineItem Load (0.2ms)[0m   [0mSELECT * FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+total_price: 154
+Rendering orders/new
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `line_items` WHERE (`line_items`.cart_id = 1) [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendered carts/_line_item (1.4ms)
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendered carts/_line_item (1.2ms)
+Rendered carts/_cart (5.2ms)
+
+ActionView::TemplateError (undefined method `state_select' for #<ActionView::Base:0x22831e0>) on line #67 of app/views/orders/new.html.haml:
+64:             .form_elementLabel
+65:               = f.label :billing_state, "State"
+66:             .form_elementInput
+67:               = state_select :billing_address, :billing_state, :country => 'US', :options => {:selected => nil}
+68:               = f.error_message_on :billing_state
+69:           %li
+70:             .form_elementLabel
+
+    app/views/orders/new.html.haml:67:in `_run_haml_app47views47orders47new46html46haml'
+    app/views/orders/new.html.haml:50:in `_run_haml_app47views47orders47new46html46haml'
+    haml (2.0.9) lib/haml/helpers/action_view_mods.rb:165:in `call'
+    haml (2.0.9) lib/haml/helpers/action_view_mods.rb:165:in `form_for'
+    haml (2.0.9) lib/haml/helpers.rb:447:in `call'
+    haml (2.0.9) lib/haml/helpers.rb:447:in `haml_bind_proc'
+    haml (2.0.9) lib/haml/helpers/action_view_mods.rb:171:in `form_for'
+    app/views/orders/new.html.haml:8:in `_run_haml_app47views47orders47new46html46haml'
+    haml (2.0.9) lib/haml/helpers/action_view_mods.rb:14:in `render'
+    haml (2.0.9) rails/./lib/sass/plugin/rails.rb:19:in `process'
+    passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+    passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+    passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+    passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+    passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+    passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+    passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (32.8ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)

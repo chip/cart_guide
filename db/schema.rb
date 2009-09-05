@@ -9,7 +9,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090905211927) do
+ActiveRecord::Schema.define(:version => 20090905222232) do
+
+  create_table "billing_addresses", :force => true do |t|
+    t.string   "address1"
+    t.string   "city"
+    t.string   "billing_state"
+    t.string   "country"
+    t.string   "zip"
+    t.integer  "order_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "carts", :force => true do |t|
     t.datetime "purchased_at"

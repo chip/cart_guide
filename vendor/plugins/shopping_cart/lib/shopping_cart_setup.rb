@@ -9,7 +9,7 @@ module ShoppingCart #:nodoc
         generate_migration
         write_migration_content
         puts "STEP 2 -- ShoppingCart plugin view files"
-        copy_view_files
+        #copy_view_files
         puts "Followup Steps"
         puts "STEP 3 -- run the task 'rake db:migrate'"
         puts "STEP 4 -- edit the file config/routes.rb"
@@ -20,7 +20,8 @@ module ShoppingCart #:nodoc
           map.resources :carts
           map.resources :orders
         END_ROUTES
-        puts "STEP 5 (optional) -- run the task 'rake shopping_cart:products'"
+        puts "STEP 5 -- Shopping Cart Gateway setup"
+        puts "STEP 6 (optional) -- run the task 'rake shopping_cart:products'"
       rescue StandardError => e
         p e
       end

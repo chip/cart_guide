@@ -46,6 +46,17 @@ class CreateShoppingCartTables < ActiveRecord::Migration
       t.datetime "created_at"
       t.datetime "updated_at"
     end
+    
+    create_table "billing_addresses", :force => true do |t|
+      t.string   "address1"
+      t.string   "city"
+      t.string   "billing_state"
+      t.string   "country"
+      t.string   "zip"
+      t.integer  "order_id"
+      t.datetime "created_at"
+      t.datetime "updated_at"
+    end
   end
   
   def self.down

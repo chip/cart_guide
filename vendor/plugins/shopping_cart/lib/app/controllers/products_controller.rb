@@ -1,4 +1,5 @@
-class ProductsController < ActionController::Base   
+class ProductsController < ActionController::Base
+  include ShoppingCart
   before_filter :admin_only, :except => [:index, :show]
   before_filter :get_cart
   

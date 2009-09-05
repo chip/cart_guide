@@ -21,7 +21,9 @@ module ShoppingCart
   end
   
   module InstanceMethods
-    def current_cart    
+    def current_cart
+      # session[:cart_id] = nil
+      logger.info "session[:cart_id]=#{session[:cart_id]}"   
       if session[:cart_id]
         @current_cart ||= Cart.find(session[:cart_id])
         session[:cart_id] = nil if @current_cart.purchased_at

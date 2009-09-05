@@ -1,10 +1,11 @@
-class OrdersController < ApplicationController
+class OrdersController < ActionController::Base   
+  include ShoppingCart
   before_filter :get_cart
   
   def new
-    unless logged_in?
-      redirect_to login_url and return
-    end
+    # unless logged_in?
+    #   redirect_to login_url and return
+    # end
     @order = Order.new(params[:order] ||
       {     
         :card_type          => 'visa',

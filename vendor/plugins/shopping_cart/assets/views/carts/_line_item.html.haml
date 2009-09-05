@@ -4,7 +4,7 @@
 - fields_for "#{prefix}[]", line_item do |item_form|
   %tr{:class => "#{cycle :odd, :even}", :id => "line_item_#{line_item.id}"}
     %td
-      = product_image(line_item.product.id)
+      / = product_image(line_item.product.id)
       = h line_item.product.name
     %td.qty{:align => 'right'}
       - if ['edit', 'update'].include?(params[:action])
