@@ -1,0 +1,4 @@
+gateway:
+  username: demo
+  password: demo_password
+  url: http://paypal.com

@@ -9,7 +9,7 @@ module ShoppingCart #:nodoc
         generate_migration
         write_migration_content
         puts "STEP 2 -- ShoppingCart plugin view files"
-        #copy_view_files
+        copy_view_files
         puts "Followup Steps"
         puts "STEP 3 -- run the task 'rake db:migrate'"
         puts "STEP 4 -- edit the file config/routes.rb"
@@ -21,6 +21,30 @@ module ShoppingCart #:nodoc
           map.resources :orders
         END_ROUTES
         puts "STEP 5 -- Shopping Cart Gateway setup"
+        puts <<-END_GATEWAY
+        
+        (config/development.rb):
+        ActiveMerchant::Billing::Base.mode = :test
+        ::GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(
+          :login      => "",
+          :password   => "",
+          :signature  => ""
+        )
+        
+        (config/test.rb):
+        config.after_initialize do
+          ActiveMerchant::Billing::Base.mode = :test
+          ::GATEWAY = ActiveMerchant::Billing::BogusGateway.new
+        end
+        
+        (config/production.rb):
+        ::GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(
+          :login      => "",
+          :password   => "",
+          :signature  => ""
+        )
+        END_GATEWAY
+        puts "STEP 6 -- Gem settings (edit environment.rb):\nconfig.gem 'haml'\nconfig.gem \"activemerchant\", :lib => \"active_merchant\", :version => \"1.4.1\""
         puts "STEP 6 (optional) -- run the task 'rake shopping_cart:products'"
       rescue StandardError => e
         p e
@@ -57,9 +81,13 @@ module ShoppingCart #:nodoc
       Dir.entries(view_files).collect do |file|
         source_file = File.join(File.dirname(__FILE__), "../assets", "views", file)
         destination_file = File.join(RAILS_ROOT, "app/views/shopping_cart/", File.basename(file))
-        next if source_file =~ /\.$/ 
-        puts "Copying #{source_file} to #{destination_file}"
-        FileUtils.cp(source_file, destination_file)
+        next if source_file =~ /\.$/
+        if File.exists?(destination_file)
+          puts "#{destination_file} already exists, so file will not be copied over."
+        else
+          puts "Copying #{source_file} to #{destination_file}"
+          FileUtils.cp(source_file, destination_file)
+        end
       end
       puts "================================DONE==========================================="
     end

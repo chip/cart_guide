@@ -15,3 +15,10 @@ config.action_controller.perform_caching             = false
 
 # Don't care if the mailer can't send
 config.action_mailer.raise_delivery_errors = false
+
+ActiveMerchant::Billing::Base.mode = :test
+::GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(
+  :login => "chip_1192802490_biz_api1.chipcastle.com",
+  :password => "1192802533",
+  :signature => "ARBEsT7KCPp6G.seyOcsB5-8eUg7Ag4ijYutL6q9CnNvdIQAEp5G7lbd"
+)
