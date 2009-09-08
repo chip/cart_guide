@@ -2,10 +2,11 @@ class ProductsController < ActionController::Base
   include ShoppingCart
   before_filter :admin_only, :except => [:index, :show]
   before_filter :get_cart
+  layout 'application'
   
   def index
     @products = Product.all
-    render :partial => 'product', :collection => @products
+    render :partial => 'product', :collection => @products, :layout => true
   end
   
   

@@ -1,6 +1,7 @@
 class OrdersController < ActionController::Base   
   include ShoppingCart
   before_filter :get_cart
+  layout 'application'
   
   def new
     # unless logged_in?

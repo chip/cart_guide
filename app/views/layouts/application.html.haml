@@ -1,0 +1,13 @@
+!!! Strict
+%html{:xmlns => 'http://www.w3.org/1999/xhtml', :lang => 'en-US' }
+  %head
+  %meta{'http-equiv' => "content-type", :content => "text/html;charset=UTF-8"}
+  %title= "Carts: #{controller.action_name}"
+  = stylesheet_link_tag 'scaffold'
+  = stylesheet_link_tag 'shopping_cart'
+
+%body
+
+  %p{:style => "color: green"}= flash[:notice]
+
+  = yield

@@ -6,7 +6,7 @@ class CartsController < ActionController::Base
     logger.info "show action"
     # @current_cart = get_cart
     # @line_items = @current_cart.line_items
-    render :partial => '/shopping_cart/cart'
+    render :partial => '/shopping_cart/cart', layout => true
   end
   
   def edit

@@ -77,7 +77,7 @@
             .form_elementLabel
               = f.label :country
             .form_elementInput
-              = country_select :billing_address, :country, ['', 'United States', 'United Kingdom']
+              = select :billing_address, :country, country_select_options
               = f.error_message_on :country
         %li
           = f.submit "Place Order"
